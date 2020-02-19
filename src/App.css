@@ -1,38 +1,384 @@
 .App {
   text-align: center;
+  height: 100%;
+   background: url('/arc.png');
+   background-size: contain;
+     background-position: center; 
+     background-repeat: repeat;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.Container {
   display: flex;
-  flex-direction: column;
+  justify-content: center;
+  flex: 0 0 100%;
+  flex-flow: row wrap;
+  align-items: center;
+  
+height: 100%;
+ 
+
+
+
+}
+@media screen and (max-width: 600px) and (min-width: 111px) {
+    .profile {
+     flex: 0 0 100%;
+     width: 100%;
+     margin: 0;
+  }
+  .description {
+   flex: 0 0 90% !important;
+  }
+  .portrait {
+    flex: 0 0 100% !important;
+
+  }
+  .about {
+    display: flex;
+    flex-flow: row-wrap;
+  }
+  .intro {
+    flex: 0 0 85% !important; 
+    font-size: 18px !important;
+  }
+  .menu {
+    flex: 0 0 20% !important;
+    font-size: 1.1em !important;
+  }
+  .contactform {
+    flex: 0 0 85% !important;
+   
+  }
+  iframe {
+    width: 100%;
+  }
+  .projecttitle{
+    flex: 0 0 80% !important;
+  }
+  
+
+  }
+  @media screen and (max-width: 1200px) and (min-width: 601px) {
+    .profile {
+    
+     width: 100%;
+     margin: 0;
+  }
+  .description {
+   flex: 0 0 30%;
+  }
+  .portrait {
+    flex: 0 0 50% !important;
+
+  }
+  .about {
+    display: flex;
+    flex-flow: row-wrap;
+  }
+  .intro {
+    flex: 0 0 95% !important; 
+    font-size: 23px !important;
+  }
+  .menu {
+    flex: 0 0 20% !important;
+    font-size: 1.1em !important;
+  }
+  }
+.navbar {
+
+display: flex;
+ display:inline;
+padding-top: 0px;
+
+ text-align: center;
+}
+
+.Nav {
+  flex: 0 0 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row nowrap;
+
+}
+.menu {
+  flex: 0 0 33%;
+  font-family: arial;
+ text-align: center;
+   display:inline;
+font-size: 2em;
+padding: 10px;
+list-style-type: none;
+font-weight: 400;
+margin: auto;
+
+
+
+}
+
+
+a {
+color: inherit;
+text-decoration: none
+}
+
+h1 {
+  font-size: 60px;
+}
+
+.name {
+  flex: 0 0 100;
+  text-align: center;
+}
+
+#about{
+    display: flex;
+  background-color: white;
+  margin-top: 50px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  border: 2px solid black;
+
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.about1{
+  font-size: 3em;
+  flex: 0 0 100%;
+ 
+
+}
+.portrait {
+  flex: 0 0 30%;
+  margin-top: 40px;
+  padding: 0px;
+
+
+
+}
+.intro {
+
+  flex: 0 0 45%;
+  margin-top: 40px;
+  text-align: justify;
+  text-justify: inter-word;
+  font-size: 1.3em;
+
+
+
+
+
+}
+#root {
+  margin-top: -15px;
+  margin-bottom: -25px;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+
+}
+
+
+p {
+  font-family: 'Montserrat', sans-serif;
+}
+
+h1 {
+  font-family: 'Montserrat', sans-serif;
+}
+
+.menu {
+    font-family: 'Montserrat', sans-serif;
+}
+#projects {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  align-content: center;
+  background-color: white;
+  padding-bottom: 120px;
+
+}
+.project {
+  flex: 0 0 100%;
+
+}
+.gallery {
+
+ 
+  flex: 0 0 30%;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  position: relative;
+}
+
+.gallerypic {
+  border: 1px solid black;
+
+
+}
+
+
+
+
+
+
+.gallery:hover .gallerypic {
+
+
+
+
+
+   opacity:0.2;
+   
+
+}
+
+.gallery:hover  .text {
+ 
+     
+     opacity: 1;
+}
+
+
+.text {
+  position: absolute;
+  color: black;
+  left: 50%;
+  top: 50%;
+  font-size: 1.5em;
+  
+  visibility: none;
+  opacity: 0;
+  text-align: center;
+  transform: translate(-50%,-50%)
+
+
+
+}
+
+.projectContainer {
+  background-color: white;
+  margin-top: 100px;
+  padding-top: 100px;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-content: inter-word;
+  padding-bottom: 50px;
+}
+
+.projecttitle {
+
+  flex: 0 0 21%;
+  text-align: left;
+}
+
+.description {
+  flex: 0 0 40%;
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+.projectgallery {
+  padding-top: 30px;
+  flex: 0 0 60%;
+}
+.projectPic {
+  margin-top: 15px;
+}
+.link {
+  flex: 0 0 100%;
+}
+
+.slide-container {
+  width: 70%;
+  margin: auto; }
+
+h3 {
+  text-align: center; }
+
+  .titles {
+    padding-top: 28px;
+  }
+
+.each-slide > div {
+  display: flex;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  background-size: cover;
+  height: 100%;
+}
+
+.each-slide span {
+  padding: 20px;
+  font-size: 20px;
+  background: #efefef;
+  text-align: center;
+}
+
+.slides {
+  padding-top: 45px;
+  flex: 0 0 68%;
+
+  height: 100%;
+  padding-bottom: 10px;
+}
+
+.slideShow {
+  outline: none;
+  width: 90%;
+  font-size: 15px;
   color: white;
+  background-color: black;
+  padding: 0px;
+  border-radius: 3px;
 }
 
-.App-link {
-  color: #61dafb;
+#contact {
+
+  
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.contactform {
+
+  flex: 0 0 80%;
+  width: 50%;
 }
+
+.form {
+
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+
+}
+.input {
+font-size: 1em;
+padding: 10px;
+margin: 20px;
+flex: 0 0 60%;
+border: 2px solid black;
+}
+.comments {
+  margin-top: 20px;
+  padding: 10px;
+  font-size: 1em;
+  flex: 0 0 100%;
+}
+
+.submit {
+  font-size: 1em;
+  flex: 0 0 50%;
+  margin-top: 20px;
+  margin-bottom: 100px;
+}
+
