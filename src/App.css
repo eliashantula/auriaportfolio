@@ -29,6 +29,7 @@ height: 100%;
   }
   .description {
    flex: 0 0 90% !important;
+   padding-top: 10px;
   }
   .portrait {
     flex: 0 0 100% !important;
@@ -55,6 +56,7 @@ height: 100%;
   }
   .projecttitle{
     flex: 0 0 80% !important;
+
   }
   
 
@@ -290,6 +292,9 @@ h1 {
 }
 .projectPic {
   margin-top: 15px;
+  max-width: 35%;
+  padding: 0px;
+
 }
 .link {
   flex: 0 0 100%;
@@ -322,22 +327,52 @@ h3 {
 }
 
 .slides {
-  padding-top: 45px;
-  flex: 0 0 68%;
-
-  height: 100%;
+  margin-top: 40px;
+  flex: 0 0 50%;
+  
   padding-bottom: 10px;
 }
+.slideContainer {
 
-.slideShow {
+  text-align: center;
+ 
   outline: none;
-  width: 90%;
-  font-size: 15px;
-  color: white;
-  background-color: black;
-  padding: 0px;
-  border-radius: 3px;
+  
+
+  box-shadow: 0 4px 9px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  padding-bottom: 0px;
+  border-radius: 1px;
+  position: relative;
 }
+.firstImage {
+ 
+  display: block;
+
+
+}
+.slideContainer:hover .firstImage  {
+  opacity: .4;
+}
+.text1 {
+  position: absolute;
+  color: black;
+  top: 55%;
+  left: 50%;
+  font-size: 1.5em;
+
+  visibility: none;
+  opacity: 0;
+  text-align: center;
+  transform: translate(-50%,-50%);
+ 
+  
+
+}
+.slideContainer:hover .text1{
+ 
+  opacity: 1;
+}
+
 
 #contact {
 

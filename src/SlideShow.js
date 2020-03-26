@@ -19,13 +19,13 @@ export default class LightBox extends Component {
     const {images} = this.props
     console.log(images)
     return (
-      <div>
-      <button type="button" className="slideShow" onClick={() => this.setState({ isOpen: true })}>
-        <img src={images[0]} width="100%" onClick={() => this.setState({ isOpen: true })}/>
-          Click to view slide show
-          
-        </button>
- 	
+      <div className="slideContainer" onClick={() => this.setState({ isOpen: true })}>
+  
+        <img className="firstImage" src={images[0]} width="100%" onClick={() => this.setState({ isOpen: true })}/>
+        
+           <div className="text1">Open Slideshow</div>
+   
+ 	      
         {isOpen && (
           <Lightbox
             mainSrc={images[photoIndex]}
@@ -44,6 +44,7 @@ export default class LightBox extends Component {
             }
           />
         )}
+
       </div>
     );
   }
