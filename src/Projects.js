@@ -13,18 +13,23 @@ import popup from './pop up1.jpg'
 import bankpop from './Bank Pop up 1.jpg'
 import retail from './retail 1.jpg'
 const images = [
+{name:"HIGH-END RESIDENTIAL",  image : highend    }
+,
 {name:"SHOWROOM",  image : showroom   },
+{name:"HEALTH CARE",  image :   health },
+{name:"BANK POP-UP", image : bankpop   },
 {name:"NON-PROFIT", image :  nonprofit },
 {name:"SHARED SPACE",  image :  sharedspace  },
 {name:"RESIDENTIAL", image : residential   },
-{name:"HOME GROUP",  image :  homegroup  },
-{name:"HIGH-END RESIDENTIAL",  image : highend    },
+{name:"RETAIL", image : retail  },
 {name:"AUTISM CENTER", image : autism   },
-{name:"HEALTH CARE",  image :   health },
-{name:"RESTAURANT", image : restaurant   },
+{name:"HOME GROUP",  image :  homegroup  },
 {name:"POP-UP",  image :  popup  },
-{name:"BANK POP-UP", image : bankpop   },
-{name:"RETAIL", image : retail  }
+{name:"RESTAURANT", image : restaurant   }
+
+
+
+
 
 
 
@@ -45,8 +50,9 @@ render(){
 	return (
 <div id="projects">
 <h1 className="project">Projects.</h1>
+<div className="containerTest">
 {project}
-
+</div>
 
 </div>
 

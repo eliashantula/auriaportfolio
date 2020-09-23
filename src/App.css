@@ -5,6 +5,7 @@
    background-size: auto;
      background-position: center; 
      background-repeat: repeat;
+     width: 100%;
 }
 
 
@@ -21,11 +22,29 @@ height: 100%;
 
 
 }
+
+
+.react-pdf__Document {
+
+
+ 
+
+}
+
+.profile {
+  box-shadow: 0 4px 12px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.react-pdf__Page {
+display: flex;
+flex: 0 0 100%;
+}
 @media screen and (max-width: 600px) and (min-width: 111px) {
     .profile {
      flex: 0 0 100%;
      width: 100%;
      margin: 0;
+     box-shadow: 0 4px 9px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   }
   .description {
    flex: 0 0 90% !important;
@@ -63,7 +82,7 @@ height: 100%;
   }
   @media screen and (max-width: 1200px) and (min-width: 601px) {
     .profile {
-    
+     box-shadow: 0 4px 9px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
      width: 100%;
      margin: 0;
   }
@@ -148,7 +167,7 @@ h1 {
 }
 
 .about1{
-  font-size: 3em;
+
   flex: 0 0 100%;
  
 
@@ -198,32 +217,58 @@ h1 {
 }
 #projects {
   display: flex;
-  flex-flow: row wrap;
+  flex-flow: wrap;
+  
   justify-content: space-around;
-  align-content: center;
+  align-items: baseline;
   background-color: white;
-  padding-bottom: 120px;
+ 
+
+
+
 
 }
 .project {
   flex: 0 0 100%;
 
 }
+
+.containerTest{
+  padding: 20px;
+  display: grid;
+  grid-gap: 15px 15px;
+  grid-template: repeat(4,1fr) / repeat(3,fit-content(32%));
+  justify-content: center;
+
+}
 .gallery {
 
+  
+
+
+height: 100%;
  
-  flex: 0 0 30%;
-  padding-bottom: 10px;
-  padding-top: 10px;
+ 
   position: relative;
+
+  
+ 
+
 }
 
 .gallerypic {
+  
   border: 1px solid black;
+  object-fit: cover;
+
+
+  
+  
+
+ 
 
 
 }
-
 
 
 
@@ -281,18 +326,22 @@ h1 {
 }
 
 .description {
-  flex: 0 0 40%;
+  flex: 0 0 45%;
   text-align: justify;
   text-justify: inter-word;
 }
 
 .projectgallery {
   padding-top: 30px;
-  flex: 0 0 60%;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
 }
 .projectPic {
   margin-top: 15px;
-  max-width: 35%;
+  margin-left: 20px;
+  margin-right: 20px;
+  flex: 0 0 40%;
   padding: 0px;
 
 }
@@ -301,7 +350,7 @@ h1 {
 }
 
 .slide-container {
-  width: 70%;
+  width: 100%;
   margin: auto; }
 
 h3 {
@@ -328,7 +377,7 @@ h3 {
 
 .slides {
   margin-top: 40px;
-  flex: 0 0 50%;
+  flex: 0 0 70%;
   
   padding-bottom: 10px;
 }
@@ -347,6 +396,7 @@ h3 {
 .firstImage {
  
   display: block;
+
 
 
 }

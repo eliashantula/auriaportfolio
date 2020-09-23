@@ -8,6 +8,7 @@ return (
 <div className = "gallery"> <Link to ={`/specific/${name.toLowerCase()}`}>
 
 <img src={image} className="gallerypic" width="100%" height="100%"/>
+
 <div className = "text">{name}
 </div>
 
